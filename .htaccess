@@ -1,0 +1,8 @@
+RewriteEngine On
+php_value upload_max_filesize 700M
+php_value max_file_uploads 1000
+php_value post_max_size 700M
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?params=$1 [L,NC,NE]
