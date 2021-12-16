@@ -2,6 +2,7 @@
 //  test area  //
 
 goto App;
+session_st
 $a = array(1);
 $b = array(0);
 print_r(array_merge($a, $b));
